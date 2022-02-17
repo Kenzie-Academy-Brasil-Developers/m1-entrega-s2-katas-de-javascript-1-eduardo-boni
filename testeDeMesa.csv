@@ -1,0 +1,71 @@
+oneThroughTwenty;i;i <= 20;return;i++;
+;1;true;1;i++;
+;2;true;2;i++;
+;3;true;3;i++;
+;19;true;19;i++;
+;20;true;20;-;
+;;;;;
+evensToTwenty;i;i <= 20;i % 2 === 0;return;
+;1;true;false;?;i++
+;2;true;true;2;i++
+;3;true;false;?;i++
+;19;true;false;?;i++
+;20;true;true;20;-
+;;;;;
+oddsToTwenty;i;i <= 20;i % 2 !== 0;return;
+;1;true;true;1;i++
+;2;true;false;?;i++
+;3;true;true;3;i++
+;19;true;true;19;i++
+;20;true;false;-;
+;;;;;
+multiplesOfFive;i;i <= 100;return;;
+;5;true;5;i+=5;
+;10;true;10;i+=5;
+;15;true;15;i+=5;
+;95;true;95;i+=5;
+;100;true;100;-;
+;;;;;
+squareNumbers;i;i <= 10;squar.push(i * i);;
+;1;true;1;i++;
+;2;true;4;i++;
+;3;true;9;i++;
+;9;true;81;i++;
+;10;true;100;-;
+;;;;;
+countingBackwards;i;i >= 1;return;;
+;20;true;20;i--;
+;19;true;19;i--;
+;18;true;18;i--;
+;2;true;2;i--;
+;1;true;1;-;
+;;;;;
+evenNumbersBackwards;i;i >= 1;i % 2 === 0;return;
+;20;true;true;20;i--
+;19;true;false;?;i--
+;18;true;true;18;i--
+;2;true;true;2;i--
+;1;true;false;-;-
+;;;;;
+oddNumbersBackwards;i;i >= 1;i % 2 !== 0;return;
+;20;true;false;?;i--
+;19;true;true;19;i--
+;18;true;false;?;i--
+;2;true;false;?;i--
+;1;true;true;1;-
+;;;;;
+multiplesOfFiveBackwards;i;i >= 1;return;i-=5;
+;100;true;100;i-=5;
+;95;true;95;i-=5;
+;90;true;90;i-=5;
+;10;true;10;i-=5;
+;5;true;5;-;
+;;;;;
+squareNumbersBackwards;i;i * i >= 1;i * i <= 100;squarInvert.push(i * i);
+;10;true;true;100;i--
+;9;true;true;81;i--
+;8;true;true;64;i--
+;2;true;true;4;i--
+;1;true;true;1;-
+;;;;;
+;;;;;
